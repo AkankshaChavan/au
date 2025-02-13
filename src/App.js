@@ -10,16 +10,14 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div>
-          {/* <Header /> */}
 
-          <div className="h-[100vh]">
+          <div className="h-[100vh] relative">
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </div>
 
-          {/* <Footer /> */}
         </div>
       </div>
     </BrowserRouter>
