@@ -4,20 +4,22 @@ import Footer from "./component/footer";
 import Header from "./component/header";
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
+import Admin from "./component/admin";
+import ChUser from "./component/chUser";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <div>
-
           <div className="h-[100vh] relative">
             <Routes>
-              <Route path="/" element={<Login />} />
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/ch-user" element={<ChUser />} />
             </Routes>
           </div>
-
         </div>
       </div>
     </BrowserRouter>
