@@ -1,6 +1,7 @@
 import React from "react";
 import LineChart from "./LineChart";
 import PieChart from "./PieChart";
+import CandleStick from "./CandleStick";
 
 function Admin() {
   return (
@@ -24,6 +25,8 @@ function Admin() {
             <div className="w-full md:w-1/2">
               <PieChart />
             </div>
+
+            <CandleStick />
           </div>
         </div>
       </div>
