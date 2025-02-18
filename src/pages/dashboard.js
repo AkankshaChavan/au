@@ -10,7 +10,6 @@ function Dashboard() {
     <>
       <Header />
       <Admin />
-      <LineChart />
       <Footer />
     </>
   );

@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.highcharts-credits {
+  display: none !important;
+}

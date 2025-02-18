@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div>
-          <div className="h-[100vh] relative">
+          <div className="min-h-screen relative">
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/" element={<Dashboard />} />

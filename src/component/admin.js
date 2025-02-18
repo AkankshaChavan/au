@@ -1,4 +1,6 @@
 import React from "react";
+import LineChart from "./LineChart";
+import PieChart from "./PieChart";
 
 function Admin() {
   return (
@@ -15,7 +17,14 @@ function Admin() {
             </div> */}
           </div>
 
-          <div className=""></div>
+          <div className="flex flex-col md:flex-row">
+            <div className="w-full md:w-1/2">
+              <LineChart />
+            </div>
+            <div className="w-full md:w-1/2">
+              <PieChart />
+            </div>
+          </div>
         </div>
       </div>
     </>
