@@ -8,13 +8,13 @@ const PieChart = () => {
       type: "pie",
     },
     title: {
-      text: "Current month Expence",
+      text: "Current month Expense",
     },
     series: [
       {
-        name: "Current month Expence",
+        name: "Current month Expense",
         data: [
-          { name: "Expence", y: 40 },
+          { name: "Expense", y: 40 },
           { name: "Balance", y: 60 },
         ],
       },

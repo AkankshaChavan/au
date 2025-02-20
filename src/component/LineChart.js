@@ -5,7 +5,7 @@ import HighchartsReact from "highcharts-react-official";
 const LineChart = () => {
   const options = {
     title: {
-      text: "Monthly Expence Data",
+      text: "Monthly Expense Data",
     },
     xAxis: {
       categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],

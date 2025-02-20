@@ -9,7 +9,7 @@ function Dashboard() {
   return (
     <>
       <Header />
-      <Admin />
+      <ChUser />
       <Footer />
     </>
   );
