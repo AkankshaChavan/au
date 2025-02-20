@@ -7,6 +7,7 @@ import Dashboard from "./pages/dashboard";
 import Admin from "./component/admin";
 import ChUser from "./component/chUser";
 import ChangePin from "./component/ChangePin";
+import EditProfile from "./component/EditProfile";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/ch-user" element={<ChUser />} />
-              <Route path="/" element={<ChangePin />} />
+              <Route path="/change-pin" element={<ChangePin />} />
+              <Route path="/" element={<EditProfile /> } />
             </Routes>
           </div>
         </div>

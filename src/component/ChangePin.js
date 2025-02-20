@@ -11,7 +11,6 @@ function ChangePin() {
                             <label className='block text-sm/6 text-gray-700 font-bold'>Card Number</label>
                             <input className='w-full rounded-md bg-white px-3 py-1.5 text-base sm:text-sm/6 border-[1px] border-[#a3a5aa] focus:border-[#6d3078] focus:ring-1 focus:ring-[#6d3078] focus:outline-none' 
                             placeholder="Enter Your Card Number"/>
-                            <small className='text-xs w-full block text-red-500 mt-1'>Please check card number</small>
                         </div>
                         <div className='feild w-full'>
                             <label className='block text-sm/6 text-gray-700 font-bold'>Card Expiry & CVV</label>
@@ -22,7 +21,7 @@ function ChangePin() {
                             placeholder="CVV"/>
                             </div>
                             
-                            <small className='text-xs w-full block text-red-500 mt-1'>Please check </small>
+                            <small className='text-xs w-full block text-red-500 mt-1'>Please enter valid card details</small>
                         </div>
                         <div className='feild w-full mx-auto'>
                             <button type='submit' className='w-full bg-[#9a48a9] hover:bg-[#6d3078] text-white p-2 m-auto border-none rounded-md mt-2 mb-8'>Generate OTP</button>
