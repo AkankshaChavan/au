@@ -6,7 +6,7 @@ function ChangePin() {
             <div className='login-form w-full p-4'>
                 <div className='form-wrapp mx-auto sm:w-full sm:max-w-sm'>
                     <form className='space-y-3'>
-                        <h1 className="text-center text-[22px] my-5">Change Your Card Pin</h1>
+                        <h1 className="text-center text-[24px] my-5 font-bold">Change Your Card Pin</h1>
                         <div className='feild w-full'>
                             <label className='block text-sm/6 text-gray-700 font-bold'>Card Number</label>
                             <input className='w-full rounded-md bg-white px-3 py-1.5 text-base sm:text-sm/6 border-[1px] border-[#a3a5aa] focus:border-[#6d3078] focus:ring-1 focus:ring-[#6d3078] focus:outline-none' 
@@ -25,7 +25,7 @@ function ChangePin() {
                             <small className='text-xs w-full block text-red-500 mt-1'>Please check </small>
                         </div>
                         <div className='feild w-full mx-auto'>
-                            <button type='submit' className='w-full bg-[#9a48a9] hover:bg-[#6d3078] text-white p-2 m-auto border-none rounded-md my-5'>Generate OTP</button>
+                            <button type='submit' className='w-full bg-[#9a48a9] hover:bg-[#6d3078] text-white p-2 m-auto border-none rounded-md mt-2 mb-8'>Generate OTP</button>
                         </div>
                         </form>
 
@@ -70,7 +70,7 @@ function ChangePin() {
                             <small className='text-xs w-full block text-red-500 mt-1'>Pin not matched</small>
                         </div>
                         <div className='feild w-full mx-auto'>
-                            <button type='submit' className='w-full bg-[#9a48a9] hover:bg-[#6d3078] text-white p-2 m-auto border-none rounded-md my-5'>Update Pin</button>
+                            <button type='submit' className='w-full bg-[#9a48a9] hover:bg-[#6d3078] text-white p-2 m-auto border-none rounded-md mt-2 mb-5'>Update Pin</button>
                         </div>
                     </form>
                 </div>
