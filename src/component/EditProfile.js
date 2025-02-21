@@ -4,8 +4,11 @@ function EditProfile() {
     const [email, setEmail] = useState('john.doe@example.com');
     const handleEmailChange = (e) => setEmail(e.target.value);
 
-    // const [birthDate, setbirthDate] = useState('john.doe@example.com');
-    // const handleEmailChange = (e) => setEmail(e.target.value);
+    const [birthDate, setbirthDate] = useState('2000-05-05');
+    const handleBirthDateChange = (e) => setbirthDate(e.target.value);
+
+    const [gender, setGender] = useState('Male');
+    const handleGender = (e) => setGender(e.target.value);
 
     return (<>
         <div className="form-wrap">
@@ -49,11 +52,16 @@ function EditProfile() {
                             <div className='feild w-full'>
                                 <label className='block text-sm/6 text-gray-700 font-bold'>Birth Date</label>
                                 <input type="date" className='w-full rounded-md bg-white px-3 py-1.5 text-base sm:text-sm/6 border-[1px] border-[#a3a5aa] focus:border-[#6d3078] focus:ring-1 focus:ring-[#6d3078] focus:outline-none'
-                                    placeholder="2000-05-05" />
+                                    placeholder="2000-05-05"
+                                    value={birthDate}
+                                    onChange={handleBirthDateChange} />
                             </div>
                             <div className='feild w-full'>
                                 <label className='block text-sm/6 text-gray-700 font-bold'>Gender</label>
-                                <select name="Gender" className="w-full rounded-md bg-white px-3 py-1.5 text-base sm:text-sm/6 border-[1px] border-[#a3a5aa] focus:border-[#6d3078] focus:ring-1 focus:ring-[#6d3078] focus:outline-none">
+                                <select name="Gender" 
+                                value={gender}
+                                onChange={handleGender}
+                                className="w-full rounded-md bg-white px-3 py-1.5 text-base sm:text-sm/6 border-[1px] border-[#a3a5aa] focus:border-[#6d3078] focus:ring-1 focus:ring-[#6d3078] focus:outline-none">
                                     <option value='Male'>Male</option>
                                     <option value='Female'>Female</option>
                                 </select>
