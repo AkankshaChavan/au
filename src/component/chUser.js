@@ -9,7 +9,6 @@ function ChUser() {
   const handleCardChange = (event) => {
     setSelectedCard(event.target.value);
   };
-  console.log("selectedCard >>>>>", selectedCard);
 
   return (
     <>

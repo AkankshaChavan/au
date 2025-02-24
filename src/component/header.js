@@ -19,16 +19,12 @@ function Header() {
   }, []);
 
   return (
-    <div className="px-10 py-3 flex flex-auto justify-between items-center border-b-[1px] border-[#6d3078] ">
-      <div className="logo-wrap">
-        <img src={logoImg} className="w-[120px]" />
-      </div>
-
+    <>
       <div>
         <div className="relative inline-block text-left" ref={dropdownRef}>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center gap-2 px-4 py-2 rounded-md"
+            className="flex items-center gap-2 px-2 py-2 rounded-md"
           >
             <img
               src={profileIcon}
@@ -52,7 +48,7 @@ function Header() {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
