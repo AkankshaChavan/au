@@ -17,11 +17,11 @@ function App() {
           <div className="min-h-screen relative">
             <Routes>
               <Route path="/login" element={<Login />} />
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/ch-user" element={<ChUser />} />
               <Route path="/change-pin" element={<ChangePin />} />
-              <Route path="/" element={<EditProfile /> } />
+              <Route path="/edit-profile" element={<EditProfile />} />
             </Routes>
           </div>
         </div>

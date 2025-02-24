@@ -5,3 +5,9 @@
 .highcharts-credits {
   display: none !important;
 }
+.card-bg {
+  background-image: url(../src/imgs/card-png.png);
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+}

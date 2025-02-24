@@ -1,12 +1,10 @@
-import React from 'react'
-import logoImg from '../../src/imgs/AU-Bank-logo.png';
-import profileIcon from '../../src/imgs/profile.png';
-import dropdownImg from '../../src/imgs/arrow-down-sign-to-navigate.png';
+import React from "react";
+import logoImg from "../../src/imgs/AU-Bank-logo.png";
+import profileIcon from "../../src/imgs/profile.png";
+import dropdownImg from "../../src/imgs/arrow-down-sign-to-navigate.png";
 import { useState, useRef, useEffect } from "react";
 
-
 function Header() {
-
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -21,9 +19,9 @@ function Header() {
   }, []);
 
   return (
-    <div className='px-10 py-3 flex flex-auto justify-between items-center border-b-[1px] border-[#6d3078] '>
-      <div className='logo-wrap'>
-        <img src={logoImg} className='w-[120px]' />
+    <div className="px-10 py-3 flex flex-auto justify-between items-center border-b-[1px] border-[#6d3078] ">
+      <div className="logo-wrap">
+        <img src={logoImg} className="w-[120px]" />
       </div>
 
       <div>
@@ -38,11 +36,11 @@ function Header() {
               className="w-8 h-8 rounded-full"
             />
             <span>John Doe</span>
-            <img src={dropdownImg} className='w-[10px]' />
+            <img src={dropdownImg} className="w-[10px]" />
           </button>
 
           {isOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md">
+            <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md z-[2]">
               <div className="p-3 border-b border-gray-200">
                 <p className="text-gray-700 font-semibold">John Doe</p>
                 <p className="text-sm text-gray-500">john.doe@example.com</p>
@@ -55,7 +53,7 @@ function Header() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
